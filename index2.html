@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<link rel="stylesheet" href="index.css">
+   
+</style>
+<html>
+<body>
+<div class="div">
+<label class="uo">Enter the string</label><br/>
+<input  type="text" placeholder="enter" id="string"><br></br>
+<button class="btn" onclick="Length();uppercase()">SUBMIT</button>
+
+<p class="fat" id="sample"></p>
+<p id="str"></p>
+</div>
+<script>
+    function Length() {
+    var a = document.getElementById("string").value; 
+    var string_length=a.length;
+    document.getElementById("sample").innerHTML = string_length;}
+    
+    
+    function uppercase() {
+        var b = document.getElementById("string").value;
+        var string_upper=b.toUpperCase();
+    document.getElementById("str").innerHTML = string_upper;
+    }
+
+</script>
+
+</body>
+</html>
